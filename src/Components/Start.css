@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+:root {
+  --start: 0;
+}
+
+
+
+
+
+@keyframes start {
+  0% {opacity: 0}
+  10% {opacity: 0}
+  20% {opacity: 100}
+  25% {opacity: 100}
+  30% {opacity: 0}
+  40% {opacity: 0;}
+  50% {opacity: 100;}
+  60% {opacity: 100;}
+  65% {opacity: 0;}
+  75% {opacity: 0;}
+  80% {opacity: 100}
+  90% {opacity: 100}
+}
+
+.header, p {
+  text-align: center;
+  justify-content: center
+}
+.Start {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    font-size: 10vh;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .scroll {
+    
+    min-height: 10vh;
+    position: absolute;
+    bottom: 2vh;
+  }
+  .scroll img {
+    
+  }
+  .scroll p {
+    font-size: 3vh;
+  }
+  .hello {
+    animation-name: start;
+    animation-duration: 10s;
+    color: white;
+    opacity: 100;
+    justify-content: center;
+    align-self: center;
+    display:flex;
+    text-align: center;
+  }
+  

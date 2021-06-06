@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-
-.Main {
-    display: flex;
-    height: 100%;
-    font-size: 20vh;
-    font-family: 'Open Sans', sans-serif;
-    align-items: center;
-    
-    justify-content: center;
-  }
-  .hello {
-    transition: opacity 1s;
+.main-container {
+    position: absolute;
+    bottom: -3vh;
+}
+.main {
+    text-align: center;
+    position: relative;
     color: white;
-    justify-content: center;
-    align-self: center;
-  }
-  
+}
+.main section {
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+}

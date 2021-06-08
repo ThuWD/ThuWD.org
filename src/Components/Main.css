@@ -1,14 +1,9 @@
 .main-container {
-    position: absolute;
-    bottom: -3vh;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 .main {
-    text-align: center;
-    position: relative;
     color: white;
-}
-.main section {
-    width: 100vw;
-    text-align: center;
-    margin: auto;
+    align-items: flex-end;
 }

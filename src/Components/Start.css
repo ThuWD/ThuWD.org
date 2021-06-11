@@ -53,8 +53,6 @@
   }
   .scroll p {
     display: flex;
-    justify-content: center;
-    height: fit-content;
     align-items: flex-start;
     font-size: 3vh;
   }

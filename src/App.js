@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
 import Start from './Components/Start'
 import Main from './Components/Main'
@@ -21,15 +21,15 @@ const App = () => {
   
   return (
     <Router>
-    <div className="App">
-    <div className={SHA256(rand().toString().toString())} style={{width: '100vw', height: '100vh'}}>
-      <div className={num} style={{width: '100%', height: '100%'}}>
-      <Start/>
+    <div className={styles.App}>
+        <div className={SHA256(rand().toString().toString())} style={{width: '100vw', height: '100vh'}}>
+            <div className={num} style={{width: '100%', height: '100%'}}>
+              <Start/>
 
-      <Particles />
-      </div>
-    {main ? <Main /> : <></>}
-    </div>
+              <Particles />
+            </div>
+        {main ? <Main /> : <></>}
+        </div>
     </div>
     </Router>
   );

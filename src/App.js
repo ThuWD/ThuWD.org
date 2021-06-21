@@ -7,6 +7,7 @@ import Particles from 'react-particles-js'
 import { SHA256 } from 'crypto-js'
 import Bg from './Components/Bg.js';
 import { useState } from 'react'
+import Projects from './Components/Projects'
 
 
 const rand = () => {
@@ -72,7 +73,7 @@ const App = () => {
               "retina_detect": true
               }}/>
             </div>
-        {main? <Main /> : <></>}
+        {main? (<><Main /><Projects /></>) : <></>}
         </div>
     </div>
     </Router>

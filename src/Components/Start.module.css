@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
 
 :root {
@@ -30,6 +30,11 @@
   align-items: center;
   justify-content: center
 }
+.hello {
+
+
+  z-index: 5;
+}
 .Start {
     display: flex;
     height: 100%;
@@ -43,28 +48,39 @@
   .scroll {
     display: flex;
     height: 20vh;
+    width: 100%;
+    justify-content: center;
     position: absolute;
     bottom: 2vh;
+    
   }
   .scroll img {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    bottom: 0;
   }
   .scroll p {
     display: flex;
-    align-items: flex-start;
+    position: absolute;
+    top: 0;
     font-size: 3vh;
+    
+    border-radius: calc(0.04vh + 0.05vw);
+    background-color: rgba(26, 158, 127, 0.8);
   }
   .hello {
     animation-name: start;
     animation-duration: 10s;
-    color: white;
+    color: #22303c;
+    font-family: 'Source Code Pro', monospace;
     opacity: 100;
     justify-content: center;
     align-items: center;
     display:flex;
     text-align: center;
-    height: 100%;
+    border-radius: calc(0.04vh + 0.05vw);
+    background-color: rgba(26, 158, 127, 0.8);
   }
   

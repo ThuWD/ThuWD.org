@@ -1,4 +1,4 @@
-.main-container {
+.mainContainer {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -6,4 +6,5 @@
 .main {
     color: white;
     align-items: flex-end;
+    justify-content: center;
 }

@@ -14,9 +14,12 @@ html::-webkit-scrollbar {
 }
 .App {
   opacity: 100;
-  height: 150vh;
+  height: 100vh;
   display: flex;
 }
-.eb814be3ca3b78c0734c560518be2a03e8d8f6e7e26447224cc7c7b105e1193e {
-  width: 100%;
+.particles {
+  z-index: 4;
+  position: absolute;
+  overflow: none;
+  top: 0;
 }

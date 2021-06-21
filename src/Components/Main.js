@@ -1,12 +1,12 @@
 import React from 'react'
-import './Main.css'
+import styles from './Main.module.css'
 
 const Main = () => {
     return (
-        <div className="main-container">
-            <div className="main">
+        <div className={styles.mainContainer}>
+            <div className={styles.main}>
                 <section>
-                    Hello World
+                    Hi there! Thanks for visiting my website, this is the creative space for a student, programmer and osu! player
                 </section>
             </div>
             

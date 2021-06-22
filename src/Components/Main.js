@@ -1,11 +1,15 @@
 import React from 'react'
 import styles from './Main.module.css'
+import typing from './Typing.gif'
 
 const Main = () => {
     return (
         <div className={styles.mainContainer}>
             <div className={styles.main}>
                 <section>
+                    <div className={styles.typing}>
+                        <img src={typing}/>
+                    </div>
                     <div className={styles.header}>
                     Let me tell you a little bit about myself!
                     </div>
@@ -13,7 +17,7 @@ const Main = () => {
                         <div style={{ backgroundColor: 'black', height: '100%', width: '100%', margin: 'auto'}}></div>
                     </div>
                     <div className={styles.bio}>
-                        <span>I'm ThuWD, a student, programmer and osu! player. If you are interested in any of my games or projects or osu! info, then this the right place!</span>
+                        <span>My name is ThuWD, I am a self taught programmer in Javascript, c++ and c#. I am also an osu! player.</span>
                     </div>
                 </section>
 

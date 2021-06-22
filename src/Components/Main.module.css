@@ -6,6 +6,10 @@
     display: flex;
     width: 100%;
 }
+.typing {margin-top: 3vh;}
+.typing img {
+    width: 15vw;
+}
 .main {
     display: flex;
     color: rgb(37, 28, 28);

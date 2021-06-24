@@ -1,15 +1,10 @@
-import styles from './Projects.module.css'
+import styles from './Projects.module.scss'
+import Item from './subComponents/Item.js'
 
 const Projects = () => {
     return (
         <div className={styles.projects}>
-            <section className={styles.item}>
-
-            <div className={styles.title}>
-                        Website is under production
-                </div>
-                <div className={styles.topBar} />
-            </section>
+            <Item title="Website in production" />
         </div>
     )
 }

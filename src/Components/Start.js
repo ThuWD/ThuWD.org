@@ -18,7 +18,7 @@ const Start = () => {
     return (
         <div className={styles.Start}>
             <header className={styles.hello}>
-                {!bruh? ( <>{StartText}</> ) : (<>How may I help you today? <div className={styles.scroll}><p>Scroll down</p><img src={Scroll} width='70px' /><div></div></div></>) }
+                {!bruh? ( <>{StartText}</> ) : (<>How may I help you today? <div className={styles.scroll}><p>Scroll down</p><img src={Scroll} /><div></div></div></>) }
             </header>
         </div>
     )

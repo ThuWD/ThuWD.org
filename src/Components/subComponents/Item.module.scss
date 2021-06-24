@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+$itemradius: calc(0.3vh + 0.3vw);
+$itemWidth: 40vw;
+$itemHeight: 53vh;
+.item {
+    width: $itemWidth;
+    float: left;
+    display: flex;
+    height: 53vh;
+    color: white;
+    background-color: #000;
+    border-radius: $itemradius;
+    transition: all 300ms;
+}
+.item:hover {
+    box-shadow: 2vh 2vh #404040;
+}
+.item .topBar {
+    border-radius: $itemradius $itemradius 0 0;
+    min-width: $itemWidth;
+    position: absolute;
+    height: 11.2vh;
+    background-color: #121212;
+
+    border-bottom: solid 10px;
+}
+.item .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: calc(2vh + 2vw);
+    text-align: center;
+}

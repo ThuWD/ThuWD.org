@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Start.module.css'
+import styles from './Start.module.scss'
 import { useState } from 'react';
 import Scroll from './scroll.svg'
 

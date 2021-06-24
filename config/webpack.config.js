@@ -165,9 +165,9 @@ extensions: ['.js', '.jsx', '.scss']
       },
       {
         loader: require.resolve('css-loader'),
-        options: {
+        options: isEnvDevelopment ? cssOptions : {
           modules: {
-        localIdentName: '[md5:hash:hex:6]'
+        localIdentName: '[md5:hash:hex:6]',
           },
         importLoaders: 1,
         }
@@ -435,7 +435,7 @@ extensions: ['.js', '.jsx', '.scss']
               options: {
                 limit: imageInlineSizeLimit,
                 mimetype: 'image/avif',
-                name: 'static/media/[name].[hash:8].[ext]',
+                name: 'static/media/[hash:8].[ext]',
               },
             },
             // "url" loader works like "file" loader except that it embeds assets
@@ -446,7 +446,7 @@ extensions: ['.js', '.jsx', '.scss']
               loader: require.resolve('url-loader'),
               options: {
                 limit: imageInlineSizeLimit,
-                name: 'static/media/[name].[hash:8].[ext]',
+                name: 'static/media/[hash:8].[ext]',
               },
             },
             // Process application JS with Babel.

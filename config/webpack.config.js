@@ -123,9 +123,11 @@ module.exports = function (webpackEnv) {
       {
         loader: 'sass-loader',
         options: {
-          sourceMap: isDevelopment
-        },
-        modules: true
+            modules: true,
+            importLoaders: 2,
+            localIdentName: '[sha1:hash:hex:4]',
+            sourceMap: isDevelopment
+        }
       }
     ]
   }
@@ -163,7 +165,12 @@ extensions: ['.js', '.jsx', '.scss']
       },
       {
         loader: require.resolve('css-loader'),
-        options: cssOptions,
+        options: {
+          modules: {
+        localIdentName: '[md5:hash:hex:6]'
+          },
+        importLoaders: 1,
+        }
       },
       {
         // Options for PostCSS as we reference these options twice
@@ -277,7 +284,7 @@ extensions: ['.js', '.jsx', '.scss']
           (info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')),
       // Prevents conflicts when multiple webpack runtimes (from different apps)
       // are used on the same page.
-      jsonpFunction: `webpackJsonp${appPackageJson.name}`,
+      jsonpFunction: `f`,
       // this defaults to 'window', but by setting it to 'this' then
       // module chunks which are built will work in web workers as well.
       globalObject: 'this',

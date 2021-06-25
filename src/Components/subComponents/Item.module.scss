@@ -11,11 +11,11 @@ $itemHeight: 53vh;
     background-color: #000;
     border-radius: $itemradius;
     transition: all 200ms;
-
+    border: solid calc(1vh + 0.45vw) #505050;
     position: relative;
 }
 .item:hover {
-    box-shadow: 2vh 2vh #404040;
+    box-shadow: 3vh 3vh #404040;
 }
 .item .topBar {
     border-radius: $itemradius $itemradius 0 0;

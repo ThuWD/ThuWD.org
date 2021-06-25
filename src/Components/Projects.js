@@ -6,7 +6,8 @@ import vynill from '../svgs/vinyll.svg'
 const Projects = () => {
     return (
         <div className={styles.projects}>
-            <Item title="AudioNet" path={genPath.audioNet()} svg={vynill}/>
+        <Item title="AudioNet" path={genPath.audioNet()} svg={vynill}/>
+        <Item title="AudioNet" path={genPath.audioNet()} svg={vynill}/>
         </div>
     )
 }

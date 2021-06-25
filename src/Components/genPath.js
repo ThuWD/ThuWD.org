@@ -1,5 +1,5 @@
-
-        export const genPathAudioNet = () => {
+    const genPath =  {
+        audioNet: () => {
             if (window.location.hostname === "thuwd.org" || window.location.hostname === "www.thuwd.org" || window.location.hostname === "localhost") {
                 return "https://audionet.thuwd.org/"
             }
@@ -7,4 +7,5 @@
                 return "https://audionet.web.app/"
             }
         }
-        export default genPathAudioNet();
+    }
+        export default genPath;

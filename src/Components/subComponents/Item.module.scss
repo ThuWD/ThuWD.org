@@ -36,17 +36,17 @@ $itemHeight: 53vh;
     text-align: center;
 }
 .item .svg {
-    background-color: rgb(56, 54, 54);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vw;
+    height: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
     font-family: 'Nunito', sans-serif;
     font-size: calc(2vh + 2vw);
     text-align: center;
 }
 .item .svg img {
     width: 5vw;
+    background-color: rgb(56, 54, 54);
 }
